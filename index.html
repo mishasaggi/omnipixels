@@ -1,0 +1,34 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="start.js"></script>
+</head>
+<body>
+<h1>omnipixels</h1>
+<h3>Conway's Game of Life</h3>
+<div class="rules">
+  <p><strong>Rules of the Game</strong></p>
+  <ol>
+    If the cell is dead:
+
+    <li><b>Birth:</b> if exactly three of its neighbors are alive, the cell will become alive at the next step.</li>
+
+    If the cell is already alive:
+
+    <li><b>Survival:</b> if the cell has two or three live neighbors, the cell remains alive.
+    Otherwise,<br> the cell will die:
+
+    <li><b>Death by loneliness:</b> if the cell has only zero or one live neighbors, the cell will become dead at the next step.
+    <li><b>Death by overcrowding:</b> if the cell alive and has more than three live neighbors, the cell also dies.
+  </ol>
+  <cite><a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life#Rules">Conway's Game of Life on Wikipedia</a></cite>
+</div>
+</br></br>
+<div id="patterns">select an initial condition:
+  <button class="random">random</button>
+</div>
+<canvas id="canvas" width="200" height="200"></canvas>
+<div id="cycle"></div>
+
+</body>
+</html>
